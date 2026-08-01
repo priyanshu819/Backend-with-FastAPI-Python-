@@ -1,10 +1,21 @@
 from fastapi import FastAPI, Path, HTTPException, Query
-from pydantic import BaseModel,Field,computed_field
-from typing import Annotated,Literal
+from pydantic import BaseModel, Field, computed_field
+from typing import Annotated, Literal
 from fastapi.responses import JSONResponse
 import json
+from fastapi.middleware.cors import CORSMiddleware # NAYA IMPORT
 
-app=FastAPI()
+app = FastAPI()
+
+# NAYA CODE: CORS ko allow karne ke liye
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Har jagah se request allow karega
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Create a Pydantic Model
 class Patient(BaseModel):
@@ -19,18 +30,18 @@ class Patient(BaseModel):
 
     @computed_field
     @property
-    def BMI_Calculate(self)-> float:
+    def bmi(self)-> float:
         bmi=round(self.weight/(self.height**2),2)
         return bmi
 
     @computed_field
     @property
-    def verdict_calculate(self)->str:
-        if self.BMI_Calculate <18.5:
+    def verdict(self)->str:
+        if self.bmi <18.5:
             return "underweight"
-        elif self.BMI_Calculate <25:
+        elif self.bmi<25:
             return "Normal"
-        elif self.BMI_Calculate <30:
+        elif self.bmi<30:
             return "Normal"
         else:
             return "Obese"
