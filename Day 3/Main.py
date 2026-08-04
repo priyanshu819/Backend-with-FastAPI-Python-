@@ -168,7 +168,7 @@ def update_patient(patient_id:str, patient_update:Patient_update):
     existing_data_info=patient_pydantic_obj.model_dump(exclude={'id'})
 
 
-    # now update thi sexisting_patient_info in data
+    # now update this existing_patient_info in data
     data[patient_id]=existing_data_info 
 
     #save the data

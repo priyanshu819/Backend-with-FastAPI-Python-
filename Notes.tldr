@@ -1634,6 +1634,48 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 14.467416173024816,
+			"y": 18074.820724045265,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:iV26kIqlW9YHZRjN2bewt",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 676.4191492314768,
+				"font": "mono",
+				"textAlign": "middle",
+				"autoSize": true,
+				"scale": 0.6517783167095178,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "convert itinto json exclude id-> save i nto data patient_id -> save data"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b6HmUw",
+			"typeName": "shape"
+		},
+		{
 			"x": 85.28076604405692,
 			"y": 9763.276841937773,
 			"rotation": 0,
@@ -2534,6 +2576,48 @@
 			},
 			"parentId": "page:page",
 			"index": "b0kZxI",
+			"typeName": "shape"
+		},
+		{
+			"x": 14.007765388481573,
+			"y": 18023.088312667107,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:wbYIvwMbeHbPlqjit9FsS",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 675.2981625006648,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 0.6692724231401758,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "updat the value -> add id column -> create a PAtient pydantic model ->"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b6GJ1f",
 			"typeName": "shape"
 		},
 		{
@@ -4302,8 +4386,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 197.1557706830081,
-			"y": 18073.256392314015,
+			"x": 428.3458161333339,
+			"y": 18362.15350394894,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -5120,9 +5204,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 113.73830280332004,
-			"y": -17963.58625681597,
-			"z": 1,
+			"x": 147.5539429072761,
+			"y": -17861.379416708252,
+			"z": 0.8876550462988703,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -5621,8 +5705,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -6.5160890582028514,
-			"y": 18005.252888112802,
+			"x": 224.673956392123,
+			"y": 18294.149999747726,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -5800,8 +5884,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 233.2668851849612,
-			"y": 18047.70083506304,
+			"x": 464.45693063528705,
+			"y": 18336.597946697962,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -9276,12 +9360,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:_bS7n4rfNMmOKNbSL9JLB",
+			"editingShapeId": "shape:iV26kIqlW9YHZRjN2bewt",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:_bS7n4rfNMmOKNbSL9JLB"
+				"shape:iV26kIqlW9YHZRjN2bewt"
 			],
-			"hoveredShapeId": null,
+			"hoveredShapeId": "shape:iV26kIqlW9YHZRjN2bewt",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -12190,8 +12274,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 206.04465618105496,
-			"y": 18019.923060252248,
+			"x": 437.2347016313808,
+			"y": 18308.82017188717,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -16880,6 +16964,45 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -11.98491528117384,
+			"y": 17947.377688153756,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:kiRGM_pQPQJ6QlSu5NW9z",
+			"type": "geo",
+			"props": {
+				"w": 768.8112418357413,
+				"h": 316.4353090042314,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "black",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "m",
+				"font": "mono",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b6EXsU",
+			"typeName": "shape"
+		},
+		{
 			"x": -21.94994693568333,
 			"y": 16109.466583357305,
 			"rotation": 0,
@@ -18707,7 +18830,7 @@
 			"props": {
 				"color": "light-violet",
 				"size": "s",
-				"w": 599.6978759765625,
+				"w": 589.4982299804688,
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": true,
@@ -18726,7 +18849,7 @@
 							"content": [
 								{
 									"type": "text",
-									"text": "Step-1 -> Create a new pydanctic model to update requred data"
+									"text": "Step-1 -> Create a new pydantic model to update requred data"
 								}
 							]
 						}
@@ -19351,9 +19474,8 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:color": "light-violet",
 				"tldraw:geo": "rectangle",
-				"tldraw:size": "s"
+				"tldraw:font": "mono"
 			},
 			"brush": null,
 			"scribbles": [],
@@ -22292,6 +22414,48 @@
 			},
 			"parentId": "page:page",
 			"index": "b27Nij",
+			"typeName": "shape"
+		},
+		{
+			"x": 14.526009468289715,
+			"y": 17973.155664039576,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ujJWbShrFgOnZf7h95XBw",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 994.6023559570312,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 0.6692724231401758,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Load data -> find existing dtat -> convert patient pydantic into json"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b6Frpj",
 			"typeName": "shape"
 		},
 		{

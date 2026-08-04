@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Info</title>
+</head>
+
+<style>
+    :root{
+        --grid-color:rgba(250, 250, 245, 0.06);
+        --grid-size:10px 10px;
+    }
+    *{
+        padding: 0px;
+        margin:0px;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body{
+        background-color: rgb(14, 3, 35);
+        color: white;
+        padding-top: 60px;
+        
+    }
+
+    #root{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+    }
+
+    .logo{
+        width: 100%;
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 25px;
+        justify-content: space-between;
+         
+        border: 1px solid rgb(33, 216, 26);
+        padding: 3px 22px;
+        box-shadow: 0 0 10px rgb(33, 216, 26) ;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background-color: black;
+        
+    }
+    .logo span{
+        color:rgb(185, 255, 88);
+         
+    }
+    .logo h1{
+        margin-left: 35px;
+    }
+    .content{
+        display: flex;
+        gap: 40px;
+    }
+    button{
+        background:none;
+        color: aliceblue;
+        border: none;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 17px;
+        cursor: pointer;
+        
+    }
+    button:hover{
+        color: rgb(97, 176, 17);
+    }
+    .hero{
+        width:60% ;
+        height: 60vh;
+        border: 1px solid green;
+        margin: auto;
+        font-size: 12px;
+        margin-top: 60px;
+        background-color: rgba(10, 3, 3, 0.622);
+        background-image:linear-gradient(to right,var(--grid-color) 1px, transparent 0.5px),linear-gradient(to bottom,var(--grid-color) 1px, transparent 0.5px);
+        background-size:var(--grid-size);
+
+       
+         
+    }
+    .hero span{
+        color:rgb(185, 255, 88);
+         
+    }
+    .hero h1{
+        margin: auto;
+    }
+    .rap{
+        margin-left: 23px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        
+    }
+    .con{
+        margin: auto;
+        display: flex;
+        gap: 55px;
+    }
+    .con button{
+        background-color: rgba(70, 216, 13, 0.284);
+        backdrop-filter: blur(55px);
+
+        padding: 8px 35px;
+        border: 1px solid rgb(133, 215, 57);
+        
+    }
+
+    .about{
+        width: 80%;
+        height: 400px;
+        display: flex;
+        border: 1px solid green;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 5px yellow;
+        
+
+    }
+    .about p{
+        margin: 20px;
+        word-spacing: 6px;
+        line-height: 1.5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .about p span{
+        color:rgb(226, 238, 87);
+        font-size: 28px;
+    }
+    .footer{
+        width: 100%;
+        height: 30px;
+        margin-top: 30px;
+        background-color: rgba(165, 42, 42, 0.303);
+        border-top: 1px solid white;
+        text-align: center;
+        padding: 5px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+
+<body>
+
+    <div id="root">
+        <div class="logo">
+            <img src="WhatsApp Image 2026-08-03 at 4.29.52 PM.jpeg" alt="" width="45px">
+            <h1><span>Track</span> Info</h1>
+            <div class="content">
+                <button onclick="window.location.href='login.html'">Login</button>
+                <button>Register</button>
+                <button>Contect us</button>
+            </div>
+        </div>
+
+        <div class="hero">
+             <div class="rap">
+                <h1>To Start Service Before complete <span>Login</span> or <span>Register</span></h1>
+
+                <div class="con">
+                    <button onclick="window.location.href='login.html'">Login</button>
+                    <button>Register</button>
+                </div>
+             </div>
+        </div>
+         
+         <div class="about">
+            <img src="WhatsApp Image 2026-08-03 at 4.29.52 PM.jpeg" alt="">
+            <p><span>Track Info</span> is a secure and user-friendly Patient Management System designed to simplify hospital and clinic record management. It enables healthcare organizations to efficiently create, view, update, and delete patient records from a single platform.
+The system helps maintain organized patient information, reduces paperwork, improves data accessibility, and ensures that all records are stored securely. With Track Info, hospitals and healthcare staff can manage patient data quickly, accurately, and with confidence.</p>
+         </div> 
+
+        <div class="footer">
+           &copy 2026 Track Info All Rights Reserved
+        </div>
+    </div>
+
+
+</body>
+
+</html>

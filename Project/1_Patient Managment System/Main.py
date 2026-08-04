@@ -1,6 +1,6 @@
 from fastapi import FastAPI,HTTPException,Path, Query
 from pydantic import BaseModel,Field,computed_field
-from typing import Annotated, Literal
+from typing import Annotated, Literal,Optional
 from fastapi.responses import JSONResponse
 import json
 from fastapi.middleware.cors import CORSMiddleware # NAYA IMPORT
@@ -12,7 +12,7 @@ app=FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credintial=True,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 
@@ -67,7 +67,7 @@ def add_data(data):
 
 
 #--------------------------
-#  Bukding  EndPoint
+#  Bulding  EndPoint
 #--------------------------
 
 # Create Home EndPoint
@@ -147,3 +147,81 @@ def sort_data(sort_by:str=Query(..., description='This is sorting feilds',exampl
 
 
 
+#-------------------
+#  PUT Method
+#-------------------
+
+# Create a Pydantic Model
+class Patient_update(BaseModel):
+    name:Annotated[Optional[str], Field(default=None)]
+    age:Annotated[Optional[int], Field(default=None, gt=0, lt=100)]
+    city:Annotated[Optional[str], Field(default=None)]
+    gender:Annotated[Optional[Literal['male','female','othert']], Field(default=None)]
+    height:Annotated[Optional[float], Field(default=None,gt=0)]
+    weight:Annotated[Optional[float], Field(default=None,gt=0)]
+
+
+# Create edit endPoint
+@app.put('/edit/{patient_id}')
+def update_patient(patient_id:str, patient_update:Patient_update):
+
+     # load the data
+     data=load_data()
+     
+     # Check Patient_is is valid or not
+     if patient_id not in data:
+         raise HTTPException(status_code=404, detail='invalid Patient Id')
+
+     #load the patient all data
+     existing_data=data[patient_id]
+
+     #Convert Patient_update Pydantic object into json
+     patient_update_json=patient_update.model_dump(exclude_unset=True)
+
+     # Now Update the value
+     for key , value in patient_update_json.items():
+         existing_data[key]=value
+
+     #Add id Column into existing data to convert into patient Pydantic model
+     existing_data['id']=patient_id
+
+     # create a pydantic model of existing data to calculate bmi and verdict
+     patient_pydantic_obj=Patient(**existing_data)
+
+     # Convert Patient pydantic object into json 
+     existing_data=patient_pydantic_obj.model_dump(exclude={'id'})
+
+     # Now update this existing data into data
+     data[patient_id]=existing_data
+
+     # save data
+     add_data(data)
+
+     # give finnaly sucess message
+     return JSONResponse(status_code=200, content={'message':'Patient updated successfully'})
+
+
+
+ #----------------
+ # Delete Methode
+ #----------------
+
+# Create delete Endpoint
+@app.delete('/delete/{patient_id}')
+def delete_data(patient_id:str):
+
+     # load the data
+     data =load_data()
+
+     # Check patient id existing
+     if patient_id not in data:
+        raise HTTPException(status_code=404, detail='Invalid Patient _id')
+
+     #delete  the data 
+     del data[patient_id]      
+
+     # save the data
+     add_data(data)   
+
+     # Return succsess Message
+     return JSONResponse(status_code=201, content='Patient Data Deleted Successfully')
