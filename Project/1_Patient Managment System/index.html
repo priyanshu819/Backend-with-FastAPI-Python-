@@ -24,6 +24,8 @@
         background-image: linear-gradient(135deg, rgb(23, 23, 60), rgb(3, 74, 3));
         color: white;
         padding-top: 60px;
+        overflow-x: hidden;
+
 
     }
 
@@ -36,7 +38,7 @@
 
     .logo {
         width: 100%;
-        height: 11vh;
+        height: 10vh;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -83,6 +85,26 @@
 
     }
 
+
+    /* Animation ko define karna */
+    @keyframes slideUpFade {
+        0% {
+            opacity: 0;
+            /* Shuru mein element gayab rahega */
+            transform: translateY(50px);
+            /* 50px neeche rahega */
+        }
+
+        100% {
+            opacity: 1;
+            /* Pura dikhne lagega */
+            transform: translateY(0);
+            /* Apni original position par aa jayega */
+        }
+    }
+
+
+
     .hero {
         width: 60%;
         height: 60vh;
@@ -93,6 +115,7 @@
         background-color: rgba(10, 3, 3, 0.622);
         background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 0.5px), linear-gradient(to bottom, var(--grid-color) 1px, transparent 0.5px);
         background-size: var(--grid-size);
+        animation: slideUpFade 1s ease-out forwards;
 
 
 
@@ -137,9 +160,26 @@
         box-shadow: 0 0.5px 10px rgb(117, 213, 7);
     }
 
+    @keyframes slideSideFade {
+            0% {
+                opacity: 0;
+                /* Shuru mein element gayab rahega */
+                transform: translateX(-50px);
+                /* 50px neeche rahega */
+            }
+
+            100% {
+                opacity: 1;
+                /* Pura dikhne lagega */
+                transform: translateX(0);
+                /* Apni original position par aa jayega */
+            }
+        }
+
     .about {
-        width: 80%;
-        height: 400px;
+        
+        width: 50%;
+        height: 50px;
         display: flex;
         border: 1px solid green;
         margin: auto;
@@ -150,6 +190,7 @@
         background-color: rgba(255, 255, 255, 0.128);
         color: rgb(244, 241, 241);
         backdrop-filter: blur(15px);
+        animation: slideSideFade 1s ease-out forwards;
 
 
     }
@@ -179,6 +220,8 @@
 
     @media (min-width: 360px) and (max-width:480px) {
 
+
+
         body {
             padding: 0px;
             margin: 0px;
@@ -199,12 +242,16 @@
 
             box-shadow: 0 0 10px rgb(33, 216, 26);
             position: fixed;
-            z-index: 999;
+            padding: 0px;
+
             top: 0;
             left: 0;
             background-color: black;
 
         }
+
+
+
 
         .logo span {
             color: rgb(185, 255, 88);
@@ -212,9 +259,10 @@
         }
 
         .content {
-            /* display: flex;
-            gap: 10px; */
-            display: none;
+            display: flex;
+            gap: 10px;
+            padding-right: 10px;
+
         }
 
         button {
@@ -232,16 +280,37 @@
 
         }
 
+        /* Animation ko define karna */
+        @keyframes slideUpFade {
+            0% {
+                opacity: 0;
+                /* Shuru mein element gayab rahega */
+                transform: translateY(50px);
+                /* 50px neeche rahega */
+            }
+
+            100% {
+                opacity: 1;
+                /* Pura dikhne lagega */
+                transform: translateY(0);
+                /* Apni original position par aa jayega */
+            }
+        }
+
+
         .hero {
             width: 100%;
             height: 30vh;
             border: 2px outset green;
             margin: auto;
+            margin-left: 3px;
             font-size: 12px;
-            margin-top: 80px;
+            margin-top: 100px;
             background-color: rgba(10, 3, 3, 0.622);
             background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 0.5px), linear-gradient(to bottom, var(--grid-color) 1px, transparent 0.5px);
             background-size: var(--grid-size);
+            animation: slideUpFade 1s ease-out forwards;
+
 
 
 
@@ -287,7 +356,513 @@
             box-shadow: 0 0.5px 10px rgb(117, 213, 7);
         }
 
+        @keyframes slideSideFade {
+            0% {
+                opacity: 0;
+                /* Shuru mein element gayab rahega */
+                transform: translateX(-50px);
+                /* 50px neeche rahega */
+            }
+
+            100% {
+                opacity: 1;
+                /* Pura dikhne lagega */
+                transform: translateX(0);
+                /* Apni original position par aa jayega */
+            }
+        }
+
+        .about {
+            width: 80%;
+            height: 480px;
+            display: flex;
+            border: 1px solid green;
+            margin: auto;
+            margin-top: 80px;
+            display: flex;
+
+            justify-content: center;
+            box-shadow: 0 0 5px yellow;
+            background: rgb(81, 64, 9);
+            color: rgb(244, 241, 241);
+            animation: slideSideFade 1s ease-out forwards;
+
+
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            display: none;
+        }
+
+        .about p {
+            margin: 10px;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(255, 255, 255, 0.167);
+            color: rgb(255, 253, 253);
+            backdrop-filter: blur(15px);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .about p span {
+            color: rgb(244, 240, 9);
+            font-size: 28px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 30px;
+            margin-top: 30px;
+            background-color: rgba(49, 9, 9, 0.572);
+            border-top: 1px solid white;
+            text-align: center;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+
     }
+
+    @media (min-width:481px) and (max-width:768px) {
+        body {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+
+
+        }
+
+        .logo {
+            width: 100%;
+            height: 10vh;
+
+
+            font-size: 15px;
+
+
+            border: 1px solid rgb(33, 216, 26);
+
+            box-shadow: 0 0 10px rgb(33, 216, 26);
+            position: fixed;
+            padding: 0px;
+
+            top: 0;
+            left: 0;
+            background-color: black;
+
+        }
+
+        .logo img {
+            width: 62px;
+        }
+
+
+
+
+        .logo span {
+            color: rgb(185, 255, 88);
+
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+            padding-right: 10px;
+
+        }
+
+        button {
+            background: none;
+            color: aliceblue;
+            border: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            color: rgb(230, 254, 48);
+
+        }
+
+        /* Animation ko define karna */
+        @keyframes slideUpFade {
+            0% {
+                opacity: 0;
+                /* Shuru mein element gayab rahega */
+                transform: translateY(50px);
+                /* 50px neeche rahega */
+            }
+
+            100% {
+                opacity: 1;
+                /* Pura dikhne lagega */
+                transform: translateY(0);
+                /* Apni original position par aa jayega */
+            }
+        }
+
+
+        .hero {
+            width: 100%;
+            height: 40vh;
+            border: 2px outset green;
+            margin: auto;
+            margin-left: 3px;
+            font-size: 12px;
+            margin-top: 120px;
+            background-color: rgba(10, 3, 3, 0.622);
+            background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 0.5px), linear-gradient(to bottom, var(--grid-color) 1px, transparent 0.5px);
+            background-size: var(--grid-size);
+            animation: slideUpFade 1s ease-out forwards;
+
+
+
+
+        }
+
+        .hero span {
+            color: rgb(185, 255, 88);
+
+        }
+
+        .hero h1 {
+            margin: auto;
+        }
+
+        .rap {
+            margin-left: 0px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            font-size: 10px;
+
+        }
+
+        .con {
+            margin: auto;
+            display: flex;
+            gap: 55px;
+        }
+
+        .con button {
+            background-color: rgba(70, 216, 13, 0.284);
+            backdrop-filter: blur(55px);
+
+            padding: 8px 35px;
+            border: 1px solid rgb(133, 215, 57);
+            transition: all 0.6s ease;
+
+        }
+
+        .con button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5px 10px rgb(117, 213, 7);
+        }
+        @keyframes slideSideFade {
+            0% {
+                opacity: 0;
+                /* Shuru mein element gayab rahega */
+                transform: translateX(-50px);
+                /* 50px neeche rahega */
+            }
+
+            100% {
+                opacity: 1;
+                /* Pura dikhne lagega */
+                transform: translateX(0);
+                /* Apni original position par aa jayega */
+            }
+        }
+
+        .about {
+            width: 80%;
+            height: 490px;
+            display: flex;
+            border: 1px solid green;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            padding: 20px;
+
+            justify-content: center;
+            box-shadow: 0 0 5px yellow;
+            background: rgb(81, 64, 9);
+            color: rgb(244, 241, 241);
+            animation: slideSideFade 1s ease-out forwards;
+
+
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            display: none;
+        }
+
+        .about p {
+            margin: 10px;
+
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(255, 255, 255, 0.167);
+            color: rgb(255, 253, 253);
+            backdrop-filter: blur(15px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 5px rgb(237, 232, 232);
+
+        }
+
+        .about p span {
+            color: rgb(244, 240, 9);
+            font-size: 28px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 30px;
+            margin-top: 30px;
+            background-color: rgba(49, 9, 9, 0.572);
+            border-top: 1px solid white;
+            text-align: center;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+    }
+
+    @media (min-width:769px) and (max-width:1024px) {
+        body {
+
+
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            overflow-x: hidden;
+
+
+        }
+
+        .logo {
+            width: 100%;
+            height: 11vh;
+
+
+            font-size: 20px;
+
+
+            border: 1px solid rgb(33, 216, 26);
+
+            box-shadow: 0 0 10px rgb(33, 216, 26);
+            position: fixed;
+            padding: 0px;
+            z-index: 999;
+
+            top: 0;
+            left: 0;
+            background-color: rgb(21, 3, 3);
+
+        }
+
+        .logo img {
+            width: 50px;
+            margin-left: 15px;
+            border: 1px solid yellow;
+        }
+
+
+
+
+        .logo span {
+            color: rgb(185, 255, 88);
+
+        }
+
+        .content {
+            display: flex;
+            gap: 30px;
+            padding-right: 10px;
+
+        }
+
+        button {
+            background: none;
+            color: aliceblue;
+            border: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            color: rgb(230, 254, 48);
+
+        }
+
+
+        /* Animation ko define karna */
+        @keyframes slideUpFade {
+            0% {
+                opacity: 0;
+                /* Shuru mein element gayab rahega */
+                transform: translateY(50px);
+                /* 50px neeche rahega */
+            }
+
+            100% {
+                opacity: 1;
+                /* Pura dikhne lagega */
+                transform: translateY(0);
+                /* Apni original position par aa jayega */
+            }
+        }
+
+        .hero {
+            width: 80%;
+            height: 40vh;
+            border: 2px outset green;
+            margin: auto;
+
+            font-size: 20px;
+            margin-top: 150px;
+            background-color: rgba(10, 3, 3, 0.622);
+            background-image: linear-gradient(to right, var(--grid-color) 1px, transparent 0.5px), linear-gradient(to bottom, var(--grid-color) 1px, transparent 0.5px);
+            background-size: var(--grid-size);
+            animation: slideUpFade 1s ease-out forwards;
+
+
+
+
+        }
+
+        .hero span {
+            color: rgb(147, 233, 9);
+
+        }
+
+        .hero h1 {
+            margin: auto;
+            font-size: 25px;
+        }
+
+        .rap {
+            margin-left: 0px;
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            font-size: 10px;
+
+        }
+
+        .con {
+            margin: auto;
+            display: flex;
+            gap: 55px;
+        }
+
+        .con button {
+            background-color: rgba(70, 216, 13, 0.284);
+            backdrop-filter: blur(55px);
+
+            padding: 8px 35px;
+            border: 1px solid rgb(133, 215, 57);
+            transition: all 0.6s ease;
+
+        }
+
+        .con button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5px 10px rgb(117, 213, 7);
+        }
+        @keyframes slideSideFade {
+            0% {
+                opacity: 0;
+                /* Shuru mein element gayab rahega */
+                transform: translateX(-50px);
+                /* 50px neeche rahega */
+            }
+
+            100% {
+                opacity: 1;
+                /* Pura dikhne lagega */
+                transform: translateX(0);
+                /* Apni original position par aa jayega */
+            }
+        }
+
+
+        .about {
+            width: 90%;
+            height: 490px;
+            display: flex;
+            border: 1px solid green;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            padding: 20px;
+            gap: 5px;
+
+            justify-content: center;
+            box-shadow: 0 0 5px yellow;
+            background: rgb(74, 58, 7);
+            color: rgb(244, 241, 241);
+            animation: slideSideFade 1s ease-out forwards;
+
+
+        }
+
+        .about img {
+            width: 353px;
+            height: 428px;
+            margin-top: 10px;
+
+        }
+
+        .about p {
+            margin: 10px;
+
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: rgba(255, 255, 255, 0.111);
+            color: rgb(255, 253, 253);
+            backdrop-filter: blur(20px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 5px rgb(237, 232, 232);
+
+        }
+
+        .about p span {
+            color: rgb(244, 240, 9);
+            font-size: 28px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 30px;
+            margin-top: 30px;
+            background-color: rgba(49, 9, 9, 0.572);
+            border-top: 1px solid white;
+            text-align: center;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+    }
+
+    
 </style>
 
 <body>
