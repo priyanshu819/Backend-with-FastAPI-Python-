@@ -9,7 +9,7 @@ def getEmploye(db:Session):
 
 
 def get_SEmploye(db:Session, emp_id:int):
-    db.query(b_models.Employee).filter(b_models.Employee.id==emp_id).first()
+    return db.query(b_models.Employee).filter(b_models.Employee.id==emp_id).first()
 
 
 def Create_Employe(db:Session, employee:c_schemas.EmployeCreate):

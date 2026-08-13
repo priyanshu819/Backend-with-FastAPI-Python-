@@ -4336,16 +4336,44 @@
 			"props": {
 				"color": "light-violet",
 				"size": "s",
-				"w": 8,
+				"w": 490.0103759765625,
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": true,
 				"scale": 1,
 				"richText": {
 					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
 					"content": [
 						{
-							"type": "paragraph"
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "create DB tables on ypur modes if they don't exist"
+												}
+											]
+										}
+									]
+								}
+							]
 						}
 					]
 				}
@@ -6676,7 +6704,7 @@
 		},
 		{
 			"x": 125.77829608945285,
-			"y": -24363.857208713976,
+			"y": -24016.63500028913,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
@@ -11688,12 +11716,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:fuTYyoKqynr2C1T0YR-2i",
+			"editingShapeId": "shape:jwZZ8kje5Pdi2j62p-Kk7",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:fuTYyoKqynr2C1T0YR-2i"
+				"shape:jwZZ8kje5Pdi2j62p-Kk7"
 			],
-			"hoveredShapeId": null,
+			"hoveredShapeId": "shape:jwZZ8kje5Pdi2j62p-Kk7",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -15688,6 +15716,48 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 79.22168865175809,
+			"y": 24683.8571781964,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:OV_b02LI3txXZa3pbj9io",
+			"type": "text",
+			"props": {
+				"color": "violet",
+				"size": "s",
+				"w": 97.82291412353516,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "get_db(): "
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b8LYNX",
+			"typeName": "shape"
+		},
+		{
 			"x": 374.9679120105284,
 			"y": 7539.040855166349,
 			"rotation": 0,
@@ -18148,6 +18218,36 @@
 			},
 			"parentId": "page:page",
 			"index": "b17sNX",
+			"typeName": "shape"
+		},
+		{
+			"x": 862.8935178753909,
+			"y": 24308.527334273505,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:jwZZ8kje5Pdi2j62p-Kk7",
+			"type": "text",
+			"props": {
+				"color": "light-violet",
+				"size": "s",
+				"w": 8,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b8NNqU",
 			"typeName": "shape"
 		},
 		{
@@ -23583,6 +23683,104 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 120.88836040468777,
+			"y": 24754.968305829032,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:CdM6QufjHkhb-TUuAxLwI",
+			"type": "text",
+			"props": {
+				"color": "light-violet",
+				"size": "s",
+				"w": 707.4843139648438,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Dependency to provide a db session to routs"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "uses the yeild keyword to make it is a genrator"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "helps FastPAI manage the opening and closing of DB connecgtion cleanly"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b8MgXb",
+			"typeName": "shape"
+		},
+		{
 			"x": 319.84642153201276,
 			"y": 8278.589427446137,
 			"rotation": 0,
@@ -25429,7 +25627,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 1.8000000715255737,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
+			"isHoveringCanvas": false,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,
