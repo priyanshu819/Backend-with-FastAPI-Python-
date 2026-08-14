@@ -6,6 +6,10 @@ from sqlalchemy.orm import sessionmaker
 url='sqlite:///./demo.db0'
 
 # Create Engine
-engine=create_engine(
-    url,  connect_args={'check_sa_meThrede'False}
-)
+engine=create_engine(url,  connect_args={'check_same_meThrede':False})
+
+# Create Session
+sessionLocal=sessionmaker
+
+# Create base 
+base=declarative_base
