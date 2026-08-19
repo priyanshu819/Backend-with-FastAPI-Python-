@@ -1,13 +1,21 @@
-math=int(input("Enter Math score: "))
-physics=int(input("Enter physics score: "))
-chemestry=int(input("Enter chemestry score: "))
-hindi=int(input("Enter hindi score: "))
-english=int(input("Enter english score: "))
+import pandas as pd
 
-total_percent=(math+physics+chemestry+hindi+english)/5
+data =[{
+    'id':[1,2],
+    'name':['Priyanshu Tiwari','Hanuman'],
+    'Course':['B.Tech','MTech'],
+    'branch':['CSE','ECE'],
+    'sem':['7th','3rd']
 
-print("-------------------------------------------")
-print(f"Total Percentage: {total_percent}%")
-print("-------------------------------------------")
+},{
+    'id':[1,2],
+    'name':['Priyanshu Tiwari','Hanuman'],
+    'Course':['B.Tech','MTech'],
+    'branch':['CSE','ECE'],
+    'sem':['7th','3rd']
 
+}
+]
 
+df=pd.DataFrame(data)
+print(df)
