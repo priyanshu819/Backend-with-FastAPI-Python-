@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta,timezone
-from tkinter import SE
 from authlib.jose import JoseError, jwt
 from fastapi import FastAPI, HTTPException
 
@@ -11,12 +10,12 @@ ACCESS_TOKEN_EXPIRY_MINUTES=30
 
 
 # Function
-def create_access_toen(data:dict):
+def create_access_token(data:dict):
     header={'alg':ALGORITHEM}
-    expire=datetime.now(timezone.utc) + timedelta(ACCESS_TOKEN_EXPIRY_MINUTES)
+    expire=datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRY_MINUTES)
     payload=data.copy()
     payload.update({'exp':expire})
-    return jwt.encode(header,payload,SECRET_KEY.decode('utf-8'))
+    return jwt.encode(header,payload,SECRET_KEY)
 
 # verify token
 def verify_token(token:str):

@@ -1876,6 +1876,64 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 87.21812130776925,
+			"y": 31965.43847164934,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:4u_GVJFB2KXALNcfJSFV3",
+			"type": "text",
+			"props": {
+				"color": "yellow",
+				"size": "s",
+				"w": 90.07725356209599,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 0.8591429211187791,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Purpose: "
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAibuE",
+			"typeName": "shape"
+		},
+		{
 			"x": 518.3011944812315,
 			"y": 8247.92969844223,
 			"rotation": 0,
@@ -3371,6 +3429,136 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 158.83113163617782,
+			"y": 32241.123674134597,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:gNH3NIBWjcH2YSLEYOI88",
+			"type": "text",
+			"props": {
+				"color": "light-violet",
+				"size": "s",
+				"w": 497.7621154785156,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Connects all the pieces (auth.py, model.py, utils.py)"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "   and defines the api endpoints"
+								}
+							]
+						},
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "The logic endpoint issue JWT tokens"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "A protected route is created , accessible only with "
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "      a valid token"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAmfyQ",
+			"typeName": "shape"
+		},
+		{
 			"x": 187.37282695742215,
 			"y": 21939.97338531244,
 			"rotation": 0,
@@ -4286,6 +4474,64 @@
 			},
 			"parentId": "page:page",
 			"index": "b4mGeb",
+			"typeName": "shape"
+		},
+		{
+			"x": 83.1903503116755,
+			"y": 32391.757880688623,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:IN-7FHC7_95dbtI2gjknk",
+			"type": "text",
+			"props": {
+				"color": "yellow",
+				"size": "s",
+				"w": 98.33308006972176,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 0.8591429211187791,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "EndPoint: "
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAnodM",
 			"typeName": "shape"
 		},
 		{
@@ -8489,7 +8735,7 @@
 		},
 		{
 			"x": 127.62718135210343,
-			"y": -31857.894521896673,
+			"y": -32552.338938746365,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
@@ -12790,6 +13036,136 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 168.69224613813094,
+			"y": 32631.33203183519,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:DKFOe5Kcli1ZUaqiaVLCP",
+			"type": "text",
+			"props": {
+				"color": "light-violet",
+				"size": "s",
+				"w": 509.34197998046875,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Extracts the token from the Authentication header "
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "    and injects it tino the toke parameter"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": " Decod and Validate the JWT"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "REturns the username encoded in the token"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bArAWr",
+			"typeName": "shape"
+		},
+		{
 			"x": 31.009518645079197,
 			"y": 13567.134307318282,
 			"rotation": 0,
@@ -12947,6 +13323,116 @@
 			},
 			"parentId": "page:page",
 			"index": "aY8lQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 122.16447514203719,
+			"y": 32004.457022960727,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:3DYZUbgMyTPXQi3yyd6PM",
+			"type": "text",
+			"props": {
+				"color": "light-violet",
+				"size": "s",
+				"w": 617.6666259765625,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "THe purpose of this module is to encapsulated utility "
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "    function related to user data and password hashing"
+								}
+							]
+						},
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Act as a helper module that means the codebase more moduler"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "    and reusable -"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAj7K2",
 			"typeName": "shape"
 		},
 		{
@@ -14614,12 +15100,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:0qBFImDoMzCVVSy68ALSz",
+			"editingShapeId": "shape:hJLRkEJTFDvtOuVaeCzX9",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:0qBFImDoMzCVVSy68ALSz"
+				"shape:hJLRkEJTFDvtOuVaeCzX9"
 			],
-			"hoveredShapeId": "shape:0qBFImDoMzCVVSy68ALSz",
+			"hoveredShapeId": "shape:hJLRkEJTFDvtOuVaeCzX9",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -14671,6 +15157,64 @@
 			},
 			"parentId": "page:page",
 			"index": "b9LRKb",
+			"typeName": "shape"
+		},
+		{
+			"x": 23.729123926860836,
+			"y": 32774.84816375135,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:hJLRkEJTFDvtOuVaeCzX9",
+			"type": "text",
+			"props": {
+				"color": "yellow",
+				"size": "s",
+				"w": 106.59311036133417,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 0.9753242188647707,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Execution"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAs6yE",
 			"typeName": "shape"
 		},
 		{
@@ -19161,6 +19705,64 @@
 			},
 			"parentId": "page:page",
 			"index": "b7weVj",
+			"typeName": "shape"
+		},
+		{
+			"x": 90.20423580972238,
+			"y": 32211.098182202295,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:Xn8MTIyRnZEt1u4mqi8oh",
+			"type": "text",
+			"props": {
+				"color": "yellow",
+				"size": "s",
+				"w": 90.07725356209599,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 0.8591429211187791,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Purpose: "
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAlgKA",
 			"typeName": "shape"
 		},
 		{
@@ -28728,6 +29330,64 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 118.48393314984969,
+			"y": 32422.338959325425,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0I3qxR0Ry39hO-syu2g15",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "s",
+				"w": 83.34374237060547,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "/token"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAoU35",
+			"typeName": "shape"
+		},
+		{
 			"meta": {},
 			"id": "binding:nZBe0dZESQjjDffkak3Bw",
 			"type": "arrow",
@@ -29395,6 +30055,144 @@
 			},
 			"parentId": "page:page",
 			"index": "b7V6br",
+			"typeName": "shape"
+		},
+		{
+			"x": 182.92836064008407,
+			"y": 32455.116745580308,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:eVXjnDV3hzWm8F9gJnKFH",
+			"type": "text",
+			"props": {
+				"color": "light-violet",
+				"size": "s",
+				"w": 478.595458984375,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "This endpoint authenticates the user"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "try to frtch the user using get_user()"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "if not found, raise an error with status code 400"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "verify the password using verify_password()"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "if incorrect raise an error with status code 400"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bApsyI",
 			"typeName": "shape"
 		},
 		{
@@ -33295,6 +34093,64 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 116.12281864789657,
+			"y": 32600.32507382738,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:pxTCsYlDNjVy2OT_Q47_Y",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "s",
+				"w": 72.54513549804688,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "/user"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAqNJj",
+			"typeName": "shape"
+		},
+		{
 			"meta": {},
 			"id": "page:page",
 			"name": "Page 1",
@@ -33634,7 +34490,8 @@
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
 				"tldraw:color": "light-violet",
-				"tldraw:size": "s"
+				"tldraw:size": "s",
+				"tldraw:font": "draw"
 			},
 			"brush": null,
 			"scribbles": [],
@@ -38540,6 +39397,64 @@
 			},
 			"parentId": "page:page",
 			"index": "b9K6qb",
+			"typeName": "shape"
+		},
+		{
+			"x": 20.968197601714564,
+			"y": 32171.757811401538,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:6SxGczY2pYwlZEU1ScyBQ",
+			"type": "text",
+			"props": {
+				"color": "yellow",
+				"size": "s",
+				"w": 121.25869992513877,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1412397500548976,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "main.py:-"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAkPLX",
 			"typeName": "shape"
 		},
 		{
