@@ -5818,6 +5818,64 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 17.98208309976144,
+			"y": 31926.098100848583,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:0qBFImDoMzCVVSy68ALSz",
+			"type": "text",
+			"props": {
+				"color": "yellow",
+				"size": "s",
+				"w": 116.59268785073753,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1.1412397500548976,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "utlis.py:-"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAhURR",
+			"typeName": "shape"
+		},
+		{
 			"x": 222.7203132405617,
 			"y": 12683.55727874405,
 			"rotation": 0,
@@ -6849,6 +6907,156 @@
 			},
 			"parentId": "page:page",
 			"index": "b2ifsE",
+			"typeName": "shape"
+		},
+		{
+			"x": 84.59501713422469,
+			"y": 31701.336373000428,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:4PukJnvnD3VFs9uttaNCQ",
+			"type": "text",
+			"props": {
+				"color": "light-violet",
+				"size": "s",
+				"w": 592.2152709960938,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Reuse username and password feilds"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Add hashed_password for DB login only"
+												}
+											]
+										}
+									]
+								},
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Clearly SSeparate:"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "          a) What the server sends(data)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "          b) what the server works with internally(userinDB)"
+								}
+							]
+						},
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "This structure improves code reusibility , security, and clarity"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAgOVM",
 			"typeName": "shape"
 		},
 		{
@@ -8280,8 +8488,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 117.40144977597674,
-			"y": -31522.56097414696,
+			"x": 127.62718135210343,
+			"y": -31857.894521896673,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
@@ -14406,12 +14614,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:8dcIsNp2Z2dh9OcZslPm9",
+			"editingShapeId": "shape:0qBFImDoMzCVVSy68ALSz",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:8dcIsNp2Z2dh9OcZslPm9"
+				"shape:0qBFImDoMzCVVSy68ALSz"
 			],
-			"hoveredShapeId": "shape:8dcIsNp2Z2dh9OcZslPm9",
+			"hoveredShapeId": "shape:0qBFImDoMzCVVSy68ALSz",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -18698,6 +18906,64 @@
 			},
 			"parentId": "page:page",
 			"index": "b7eZyf",
+			"typeName": "shape"
+		},
+		{
+			"x": 41.973489188867006,
+			"y": 31655.304030152864,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:SO41lvPIDJTFlYVWyvPYp",
+			"type": "text",
+			"props": {
+				"color": "light-green",
+				"size": "s",
+				"w": 71.90277099609375,
+				"font": "sans",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "bulletList",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "listItem",
+									"attrs": {
+										"dir": "auto"
+									},
+									"content": [
+										{
+											"type": "paragraph",
+											"attrs": {
+												"dir": "auto"
+											},
+											"content": [
+												{
+													"type": "text",
+													"text": "Need: "
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAfiHr",
 			"typeName": "shape"
 		},
 		{
@@ -33367,10 +33633,8 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:size": "s",
 				"tldraw:color": "light-violet",
-				"tldraw:font": "draw",
-				"tldraw:geo": "rectangle"
+				"tldraw:size": "s"
 			},
 			"brush": null,
 			"scribbles": [],
