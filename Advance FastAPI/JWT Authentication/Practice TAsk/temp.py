@@ -20,4 +20,3 @@ login={
 
 print(login)
 
-print(f"Welcome {login[username]} in the profile")
