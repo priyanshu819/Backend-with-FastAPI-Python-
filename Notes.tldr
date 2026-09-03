@@ -8735,7 +8735,7 @@
 		},
 		{
 			"x": 127.62718135210343,
-			"y": -32552.338938746365,
+			"y": -32830.116705486245,
 			"z": 1,
 			"meta": {},
 			"id": "camera:page:page",
@@ -14655,6 +14655,96 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 1.6089178910606279,
+			"y": 32952.7903199882,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:ODOJ1o40-W3mCyOzNoeTB",
+			"type": "text",
+			"props": {
+				"color": "red",
+				"size": "s",
+				"w": 598.3350219726562,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "1. timedelta - Token ki expiry set karne ke liye"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "2. timezone.utc / datetime.utcnow() - Sahi time pakadne ke liye"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "3. jwt.encode() - Token BANANE ke liye"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "4. jwt.decode() - Token KHOLNE aur check karne ke liye"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "5. .get() - Safe tarike se data nikalne ke liye"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAuFFr",
+			"typeName": "shape"
+		},
+		{
 			"x": 442.99481201171875,
 			"y": 19832.552124023438,
 			"rotation": 0,
@@ -15100,12 +15190,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": "shape:hJLRkEJTFDvtOuVaeCzX9",
+			"editingShapeId": "shape:ODOJ1o40-W3mCyOzNoeTB",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:hJLRkEJTFDvtOuVaeCzX9"
+				"shape:ODOJ1o40-W3mCyOzNoeTB"
 			],
-			"hoveredShapeId": "shape:hJLRkEJTFDvtOuVaeCzX9",
+			"hoveredShapeId": "shape:ODOJ1o40-W3mCyOzNoeTB",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -34489,9 +34579,10 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:color": "light-violet",
+				"tldraw:color": "red",
 				"tldraw:size": "s",
-				"tldraw:font": "draw"
+				"tldraw:font": "draw",
+				"tldraw:geo": "rectangle"
 			},
 			"brush": null,
 			"scribbles": [],
@@ -36919,6 +37010,57 @@
 			},
 			"parentId": "page:page",
 			"index": "b3enFQ",
+			"typeName": "shape"
+		},
+		{
+			"x": 90.4978033891075,
+			"y": 32848.90142792481,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:DTnEl0waILQ7ih1ZhBAWk",
+			"type": "geo",
+			"props": {
+				"w": 400.7638702392578,
+				"h": 56.00173377990723,
+				"geo": "rectangle",
+				"dash": "draw",
+				"growY": 0,
+				"url": "",
+				"scale": 1,
+				"flipX": false,
+				"flipY": false,
+				"color": "red",
+				"labelColor": "black",
+				"fill": "none",
+				"size": "s",
+				"font": "draw",
+				"align": "middle",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "Importent Function"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "bAtA0E",
 			"typeName": "shape"
 		},
 		{
