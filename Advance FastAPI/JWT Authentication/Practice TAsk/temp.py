@@ -29,4 +29,4 @@ fake_db={
     "email":"priya@gmail.com"
 }
 
-gitr 
+print(fake_db.values())
