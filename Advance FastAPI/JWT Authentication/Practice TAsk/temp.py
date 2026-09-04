@@ -29,4 +29,3 @@ fake_db={
     "email":"priya@gmail.com"
 }
 
-print(fake_db.values())
