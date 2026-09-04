@@ -32,4 +32,5 @@ fake_db={
     "email":"priya@gmail.com"
 }
 
+#print
 print(fake_db.values())
