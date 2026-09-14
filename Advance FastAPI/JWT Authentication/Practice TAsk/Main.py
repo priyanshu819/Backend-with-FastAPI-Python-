@@ -1,9 +1,14 @@
-from fastapi import FastAPI,HTTPException
+from fastapi import FastAPI,HTTPException,Depends
 from pydantic import BaseModel,EmailStr,field_validator,Field
-from Security import hash_pas ,verify_password
+from Security import hash_pas ,verify_password,create_access_token,SECRATE_KEY,ALGORITHEM
+from fastapi.security import OAuth2PasswordBearer,OAuth2PasswordRequestForm
+from jose import jwt,JWTError
+
 import re
 
 app=FastAPI()
+
+oauth_schema2=OAuth2PasswordBearer(tokenUrl='login')
 
 # Create A PydanticMOdel for Registration
 class User(BaseModel):
@@ -48,7 +53,7 @@ def register(user:User):
     return {'message':'User Got Regesterd SucssesFully !'}
 
 # Create A PydanticMOdel for login
-class User(BaseModel):
+class UserLogin(BaseModel):
     
     username:str
     password:str
@@ -56,7 +61,7 @@ class User(BaseModel):
 
 # Create Api For LogIN
 @app.post('/login')
-def login(user:User):
+def login(user:OAuth2PasswordRequestForm=Depends()):
 
     stored_user=fake_db.get(user.username)
 
@@ -65,4 +70,32 @@ def login(user:User):
     check_password=verify_password(user.password,stored_user['password'])
     if not check_password:
         raise HTTPException(status_code=401, detail="Invalid Password !")
-    return f"Hey {stored_user['fullname']} Login SuccessFully"
+    access_token=create_access_token({
+        "sub":stored_user['username'],
+        "email":stored_user['email']
+    })
+    return {"access_token":access_token,
+            "token_type":"bearer"}
+
+
+def get_current_user(token:str=Depends(oauth_schema2)):
+    
+    try:
+        payload=jwt.decode(
+            token,
+            SECRATE_KEY,
+            algorithms=ALGORITHEM
+
+        )
+        return payload
+    except JWTError:
+        raise HTTPException(status_code=401, detail="Invalid or expired Token")
+
+
+# This is Protected Profile
+@app.get('/profile')
+def profile(current_user=Depends(get_current_user)):
+    return{
+        "message":"Your are Authnticated !",
+        "user":current_user
+    }
