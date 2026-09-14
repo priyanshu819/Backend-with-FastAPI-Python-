@@ -18,10 +18,6 @@
 #     'pass':hash_pas
 # }
 
-# print(login)
-# print('----------------------------------------')
-# print(f"  Hey {login['username'][0].upper()}{login['username'][1:len(login['username'])]} Welcome !")
-# print('----------------------------------------')
 
 
 
