@@ -8,4 +8,4 @@ def hello():
 
 @app.get("/about")
 def about():
-    return("massage: Algo Tantra is an Education h Platform where u can Learn AI")
+    return("massage: Algo Tantra is an Education  Platform where u can Learn AI")
